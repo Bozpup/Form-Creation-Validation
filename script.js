@@ -31,8 +31,8 @@ form.addEventListener("submit", (event) => {
   }
 
   feedbackDiv.style.display = "block";
-  if (isValid == true) {
-    feedbackDiv.textContent = "Registration Successful";
+  if ((isValid = true)) {
+    feedbackDiv.textContent = "Registration successful";
     feedbackDiv.style.color = "#28a745";
   } else {
     feedbackDiv.innerHTML = messages.join("<br>"); // Display error messages with line breaks
